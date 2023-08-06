@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Resume.css";
+import "./Project.css";
 
-class Resume extends Component {
+class Project extends Component {
   constructor() {
     super();
     this.state = {
@@ -15,11 +15,11 @@ class Resume extends Component {
 
   render() {
     return (
-      <div className="main-section"> 
-        resume
+      <div className="project">
+        project
       </div>
     );
   }
 }
 
-export default Resume;
+export default Project;

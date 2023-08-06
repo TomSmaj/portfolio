@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+  }
+  
+  .navItem {
+    margin: 0 10px;
+  }

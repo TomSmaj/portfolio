@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
+import Project from "./Project";
+import "./Projects.css";
+const projectData = require("../data/projectData").projectData;
 
-import "./Resume.css";
-
-class Resume extends Component {
+class Projects extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,12 +16,25 @@ class Resume extends Component {
   };
 
   render() {
+    console.log(projectData);
     return (
-      <div>
-        projects
+      <div className="main-section">
+        {projectData.map(project => {
+            return(
+            <div className = "row">                
+                <Project 
+                    name={project.name}
+                    pic={project.pic}
+                    link={project.link}
+                    github={project.github}
+                    description={project.description}
+                />
+            </div>
+            )
+        })}
       </div>
     );
   }
 }
 
-export default Resume;
+export default Projects;
