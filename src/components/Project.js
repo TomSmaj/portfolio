@@ -18,16 +18,16 @@ class Project extends Component {
     render() {
         return (
             <div className="project">
-                <Card style={{ width: '36rem' }}>
+                <Card style={{ width: '30rem' }}>
                     <Card.Img variant="top" src={this.props.pic} />
                     <Card.Body>
-                        <Card.Title>{this.props.name}</Card.Title>
+                        <a href={this.props.link}><Card.Title>{this.props.name}</Card.Title></a>
                         <Card.Text>
                         {this.props.description.map(line => {
-                            return (<li className="card-text">{line}</li>)
+                            return (<p className="card-text">{line}</p>)
                         })}
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <a href={this.props.github}><Button variant="primary">Github repo</Button></a>
                     </Card.Body>
                 </Card>
             </div>

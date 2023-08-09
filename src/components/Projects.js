@@ -19,10 +19,12 @@ class Projects extends Component {
     console.log(projectData);
     return (
       <div className="main-section">
+        <div className="container">
         {projectData.map(project => {
             return(
             <div className = "row">                
                 <Project 
+                    className="project"
                     name={project.name}
                     pic={project.pic}
                     link={project.link}
@@ -32,6 +34,7 @@ class Projects extends Component {
             </div>
             )
         })}
+        </div>
       </div>
     );
   }

@@ -12,7 +12,13 @@ body {
   display: flex;
   justify-content: center;
   flex: 1; /* Make the section take up the remaining space of the body */
-  background-color: #f2f2f2; 
+  /* background-color: #f2f2f2;  */
   padding: 20px;
   min-height: 100%;
+  overflow-y: scroll;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 180px, black calc(100% - 180px), transparent 100%);
+}
+
+.card {
+  font-family: "Courier New", monospace;  
 }

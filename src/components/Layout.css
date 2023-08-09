@@ -1,8 +1,15 @@
 .nav {
     display: flex;
     justify-content: center;
-    min-height: 100px;
+    min-height: 80px;
     align-items: center;
+    flex-shrink: 0; /* Prevent the nav from shrinking when the Projects section grows */
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
   }
   
   .navItem {
