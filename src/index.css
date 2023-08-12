@@ -4,21 +4,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Courier New", monospace;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#root{
+  min-height: 100vh;
+  background: #0FBCBC;
 }
 
 .main-section {
   display: flex;
   justify-content: center;
-  flex: 1; /* Make the section take up the remaining space of the body */
+  flex: 1;
+  /* Make the section take up the remaining space of the body */
   /* background-color: #f2f2f2;  */
   padding: 20px;
   min-height: 100%;
-  overflow-y: scroll;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 180px, black calc(100% - 180px), transparent 100%);
+  width: 100%;
+  /* overflow-y: scroll; */
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  min-height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100%;  
 }
 
 .card {
-  font-family: "Courier New", monospace;  
+  font-family: "Courier New", monospace;
+  margin: 30px;
+  display: flex;
+  /* overflow-y: scroll; */
+  justify-content: center;
+  /* background-color: #bdbdbd;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000; */
+  /* padding-left: 0;
+  padding-right: 0; */
+  width: 30%;
+  height: 40%;
+  padding: 0.5px;
+  background-color: #bdbdbd;
+}
+
+.windows95 {
+  background-color: #bdbdbd;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
 }

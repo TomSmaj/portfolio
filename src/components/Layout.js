@@ -5,10 +5,10 @@ const Layout = () => {
     return (
         <>
             <nav className="nav">
-                <div className="navItem">
+                <div className="navItem windows95">
                     <Link to="/">Projects</Link>
                 </div>
-                <div className="navItem">
+                <div className="navItem windows95">
                     <Link to="/resume">Resume</Link>
                 </div>
             </nav>
