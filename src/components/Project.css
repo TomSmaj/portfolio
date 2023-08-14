@@ -1,0 +1,30 @@
+.project{
+    max-height: 50%;
+    min-width: 50%;
+    min-width: 70%;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow: scroll;
+}
+
+.project-pic{
+    max-height: 30%;
+    max-width: 100%;
+    float: top;
+}
+
+.project-text{
+    overflow: scroll;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.project-name {
+    float: left;
+    margin-left: 20px;
+}
+
+.project-github {
+    text-align: right;
+    margin-right: 20px;
+}
