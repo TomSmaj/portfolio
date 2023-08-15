@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Project from "./Project";
-import "./Projects.css";
 import "../index.css";
 const projectData = require("../data/projectData").projectData;
 
@@ -17,7 +16,6 @@ class Projects extends Component {
   };
 
   render() {
-    console.log(projectData);
     return (
       <div className="container">
         <div className="row">
@@ -30,6 +28,8 @@ class Projects extends Component {
                   link={project.link}
                   github={project.github}
                   description={project.description}
+                  languages={project.languages}
+                  shortname={project.shortname}
                 />
               </div>
             )
