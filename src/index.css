@@ -24,26 +24,85 @@ body {
   width: 100%;
   min-height: 100%;
   min-width: 100%;  
+  display: block;
 }
 
-.card {
-  font-family: "Courier New", monospace;
-  margin: 30px;
+.nav {
   display: flex;
-  /* overflow-y: scroll; */
-  /* background-color: #bdbdbd;
-  box-shadow: inset 1px 1px #fff, 1px 1px #000; */
-  /* padding-left: 0;
-  padding-right: 0; */
-  padding: 0.5px;
-  background-color: #bdbdbd;
-  position: relative;
-  overflow: auto;
+  justify-content: center;
+  min-height: 50px;
+  align-items: center;
+  flex-shrink: 0; /* Prevent the nav from shrinking when the Projects section grows */
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  /* background-color: #bdbdbd; */
+  /* box-shadow: inset 1px 1px #fff, 1px 1px #000; */
+  display: block;
+}
+
+.navItem {
+  margin: 0 10px;
+  padding: 2px;
+}
+
+.project{
+  display: block;
+  max-height: 50%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: scroll; */
 }
 
 .windows95 {
   background-color: #bdbdbd;
   box-shadow: inset 2px 2px #fff, 2px 2px #000;
-  padding: 2px;
   border-radius: 4px;
+  font-family: "Courier New", monospace;
+  display: block;
+  height: 100%;
 }
+
+.project-pic{
+  /* max-height: 30%; */
+  max-height: 20rem;
+  max-width: 10.15rem;
+  height: auto;
+  width: auto;
+  float: top;
+  display: block;
+}
+
+.project-text{
+  max-height: 12rem;
+  max-width: 100%;
+  overflow: scroll;
+  display: block;
+  padding: 3rem;
+  padding-top: 0;
+}
+
+.project-name {
+  float: left;
+  /* margin-left: 20px; */
+  display: block;
+}
+
+.project-github {
+  text-align: right;
+  /* margin-right: 20px; */
+  display: block;
+}
+
+/* ::-webkit-scrollbar {width: 20px; height: 20px; border-radius: 4px;}
+::-webkit-scrollbar-thumb {
+background-color: #bdbdbd;
+box-shadow: inset 1px 1px #fff, 1px 1px #000;
+border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+background-color: #e0e0e0;
+box-shadow: inset 1px 1px #fff, 1px 1px #000;
+} */

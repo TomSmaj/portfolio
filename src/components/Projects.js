@@ -19,22 +19,22 @@ class Projects extends Component {
   render() {
     console.log(projectData);
     return (
-
       <div className="container">
-        {projectData.map(project => {
-          return (
-            <span>
-              <Project 
-                name={project.name}
-                pic={project.pic}
-                link={project.link}
-                github={project.github}
-                description={project.description}
-              />
-              </span>
-          )
-        })}
-
+        <div className="row">
+          {projectData.map(project => {
+            return (
+              <div className="col">
+                <Project
+                  name={project.name}
+                  pic={project.pic}
+                  link={project.link}
+                  github={project.github}
+                  description={project.description}
+                />
+              </div>
+            )
+          })}
+        </div>
       </div>
     );
   }
