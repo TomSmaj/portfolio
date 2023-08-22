@@ -17,25 +17,25 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          {projectData.map(project => {
-            return (
-              <div className="col">
-                <Project
-                  name={project.name}
-                  pic={project.pic}
-                  link={project.link}
-                  github={project.github}
-                  description={project.description}
-                  languages={project.languages}
-                  shortname={project.shortname}
-                />
-              </div>
-            )
-          })}
+        <div className="container">
+          <div className="row">
+            {projectData.map(project => {
+              return (
+                <div className="col">
+                  <Project
+                    name={project.name}
+                    pic={project.pic}
+                    link={project.link}
+                    github={project.github}
+                    description={project.description}
+                    languages={project.languages}
+                    shortname={project.shortname}
+                  />
+                </div>
+              )
+            })}
+          </div>
         </div>
-      </div>
     );
   }
 }

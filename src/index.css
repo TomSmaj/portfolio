@@ -1,50 +1,37 @@
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Courier New", monospace;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 #root{
   min-height: 100vh;
-  /* background: #0FBCBC; */
-  /* background: linear-gradient(to top right, #018281, #0FBCBC); */
-  background: linear-gradient(to top right, #027575, #0FBCBC);
+  background: linear-gradient(to top right, #018281, #0FBCBC);
 }
 
-.container {
-  display: flex;
-  flex: 1;
-  padding: 20px;
-  min-height: 100%;
-  width: 100%;
-  min-height: 100%;
-  min-width: 100%;  
+.nav {  
   display: block;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  min-height: 50px;
-  align-items: center;
-  flex-shrink: 0; /* Prevent the nav from shrinking when the Projects section grows */
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  /* background-color: #bdbdbd; */
-  /* box-shadow: inset 1px 1px #fff, 1px 1px #000; */
-  display: block;
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background-image: url('data/images/hiroshi-nagai-background.jpg');
+  /* background-repeat: no-repeat; */
 }
 
 .navItem {
-  margin: 0 10px;
-  padding: 2px;
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.navItemList{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-container {
+  display: block;
+  float: right;
+  width: 85%;
 }
 
 .project{
@@ -65,45 +52,3 @@ body {
   display: block;
   height: 100%;
 }
-
-.project-pic{
-  /* max-height: 30%; */
-  max-height: 20rem;
-  max-width: 10.15rem;
-  height: auto;
-  width: auto;
-  float: top;
-  display: block;
-}
-
-.project-text{
-  max-height: 12rem;
-  max-width: 100%;
-  overflow: scroll;
-  display: block;
-  padding: 3rem;
-  padding-top: 0;
-}
-
-.project-name {
-  float: left;
-  /* margin-left: 20px; */
-  display: block;
-}
-
-.project-github {
-  text-align: right;
-  /* margin-right: 20px; */
-  display: block;
-}
-
-/* ::-webkit-scrollbar {width: 20px; height: 20px; border-radius: 4px;}
-::-webkit-scrollbar-thumb {
-background-color: #bdbdbd;
-box-shadow: inset 1px 1px #fff, 1px 1px #000;
-border-radius: 4px;
-}
-::-webkit-scrollbar-track {
-background-color: #e0e0e0;
-box-shadow: inset 1px 1px #fff, 1px 1px #000;
-} */
