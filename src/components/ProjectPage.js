@@ -17,8 +17,8 @@ class Projects extends Component {
 
   render() {
     return (
-        <div className="container">
-          <div className="row">
+        <div className="container" style={{'min-width': '85vw', 'min-height':'100vh'}}>
+          <div className="row" style={{width: '100%', 'min-height': '100vh'}}>
             {projectData.map(project => {
               return (
                 <div className="col">

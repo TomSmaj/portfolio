@@ -26,15 +26,14 @@ class Project extends Component {
                     <div className="windows95">
                         <div className="row">
                             <div className="header-space" style={{height: "1.5rem"}}>
-
+                            <a className="project-name" href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.name}</a>
                             </div>
                         </div>                
                         <div className="row">
                             <img className="project-pic" src={this.props.pic} />
                         </div>
-                        <div className="row">
-                            <a className="project-name col" href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.name}</a>
-                            <a className="project-github col" href={this.props.github} target="_blank" rel="noopener noreferrer">Github repo</a>
+                        <div className="row">                            
+                            <a className="project-github" href={this.props.github} target="_blank" rel="noopener noreferrer">Github repo</a>
                         </div>
                         <div className="row">
                             <div className="project-text">
