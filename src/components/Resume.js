@@ -15,7 +15,7 @@ class Resume extends Component {
 
   render() {
     return (
-      <div className="main-section"> 
+      <div className="container"> 
         resume
       </div>
     );

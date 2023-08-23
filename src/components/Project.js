@@ -1,36 +1,50 @@
 import React, { Component } from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import "./Project.css";
+import Draggable from 'react-draggable';
+// import "./Project.css";
+import "../index.css";
 
 class Project extends Component {
     constructor() {
         super();
         this.state = {
-
+            pos: { x: 0, y: 0 },
+            dragging: false,
+            rel: null // position relative to the cursor
         }
+
     };
 
     componentDidMount = () => {
 
     };
 
+
     render() {
         return (
-            <div className="project">
-                <Card style={{ width: '30rem' }}>
-                    <Card.Img variant="top" src={this.props.pic} />
-                    <Card.Body>
-                        <a href={this.props.link}><Card.Title>{this.props.name}</Card.Title></a>
-                        <Card.Text>
-                        {this.props.description.map(line => {
-                            return (<p className="card-text">{line}</p>)
-                        })}
-                        </Card.Text>
-                        <a href={this.props.github}><Button variant="primary">Github repo</Button></a>
-                    </Card.Body>
-                </Card>
-            </div>
+            <Draggable>
+                <div className={"project " + this.props.shortname}>
+                    <div className="windows95">
+                        <div className="row">
+                            <div className="header-space" style={{height: "1.5rem"}}>
+                            <a className="project-name" href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.name}</a>
+                            </div>
+                        </div>                
+                        <div className="row">
+                            <img className="project-pic" src={this.props.pic} />
+                        </div>
+                        <div className="row">                            
+                            <a className="project-github" href={this.props.github} target="_blank" rel="noopener noreferrer">Github repo</a>
+                        </div>
+                        <div className="row">
+                            <div className="project-text">
+                                {this.props.description.map(line => {
+                                    return (<p>{line}</p>)
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Draggable>
         );
     }
 }

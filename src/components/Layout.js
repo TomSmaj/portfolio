@@ -1,19 +1,29 @@
 import { Outlet, Link } from "react-router-dom";
-import "./Layout.css";
+// import "./Layout.css";
+import "../index.css";
 
 const Layout = () => {
     return (
         <>
-            <nav className="nav">
-                <div className="navItem">
-                    <Link to="/">Projects</Link>
+            <div className="nav">
+                <div className="navItemList">
+                <div className="container">
+                    <div className="row">
+                        <div className="navItem windows95" style={{'max-width': '50%'}}>
+                            <Link to="/">Projects</Link>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="navItem windows95" style={{'max-width': '50%'}}>
+                            <Link to="/resume">Resume</Link>
+                        </div>
+                    </div>
                 </div>
-                <div className="navItem">
-                    <Link to="/resume">Resume</Link>
                 </div>
-            </nav>
-
-            <Outlet />
+            </div>
+            <div className="main-container">
+                <Outlet />
+            </div>
         </>
     )
 };

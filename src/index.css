@@ -1,24 +1,96 @@
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Courier New", monospace;
+#root{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(to top right, #018281, #0FBCBC);
 }
 
-.main-section {
-  display: flex;
-  justify-content: center;
-  flex: 1; /* Make the section take up the remaining space of the body */
-  /* background-color: #f2f2f2;  */
-  padding: 20px;
-  min-height: 100%;
-  overflow-y: scroll;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 180px, black calc(100% - 180px), transparent 100%);
+.nav {  
+  display: block;
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background-image: url('data/images/hiroshi-nagai-background.jpg');
+  background-position: 0% 45%;
+  /* background-repeat: no-repeat; */
 }
 
-.card {
-  font-family: "Courier New", monospace;  
+.navItem {
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.navItemList{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-container {
+  display: block;
+  float: right;
+  width: 85%;
+  height: 100vh;
+}
+
+.windows95 {
+  background-color: #bdbdbd;
+  box-shadow: inset 2px 2px #fff, 2px 2px #000;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  display: block;
+  height: 100%;
+}
+
+.project{
+  display: block;
+  max-height: 50rem;
+  max-width: 30rem;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.project-name {
+  float: left;
+  /* margin-left: 20px; */
+  display: block;
+  margin-left: 3px;
+}
+
+.project-github {
+  text-align: left;
+  /* margin-right: 20px; */
+  display: block;
+  margin-left: 3px;
+}
+
+.project-pic{
+  /* max-height: 30%; */
+  max-height: 20rem;
+  max-width: 10.15rem;
+  height: auto;
+  width: auto;
+  float: top;
+  display: block;
+}
+
+.project-text{
+  max-height: 13rem;
+  max-width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  display: block;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project-text::-webkit-scrollbar {
+  display: none;
 }
