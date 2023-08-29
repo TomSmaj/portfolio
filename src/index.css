@@ -1,13 +1,182 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  min-height: 100vh;
+  background: linear-gradient(to top right, #018281, #0FBCBC);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* this weird '> *' rule overwrites some annoying bootstrap styling */
+/* div.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  >* {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+div.col {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+} */
+
+ul{
+  /* list-style-type: "\25BE"; */ /* upside down triangle */
+  /* list-style-type: "\30B7"; */ /* kanakada character */
+  /* list-style-type: "\53E3"; */ /* square kanakada character */
+  /* list-style-type: disclosure-open; */ /* upsdie down triangle */
+  list-style-type: "\25AB"; /* hollow square */
+}
+
+.nav {
+  display: block;
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background-image: url('data/images/hiroshi-nagai-background.jpg');
+  background-position: 0% 45%;
+  /* background-repeat: no-repeat; */
+}
+
+.navItem {
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.navItemList {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-container {
+  display: block;
+  float: right;
+  width: 85%;
+  height: 100vh;
+}
+
+.windows95 {
+  background-color: #bdbdbd;
+  box-shadow: inset 2px 2px #fff, 2px 2px #000;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  display: block;
+  height: 100%;
+}
+
+.project {
+  display: block;
+  max-height: 50rem;
+  max-width: 30rem;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.project-name {
+  float: left;
+  /* margin-left: 20px; */
+  display: block;
+  margin-left: 3px;
+}
+
+.project-github {
+  text-align: left;
+  /* margin-right: 20px; */
+  display: block;
+  margin-left: 3px;
+}
+
+.project-pic {
+  /* max-height: 30%; */
+  max-height: 20rem;
+  max-width: 10.15rem;
+  height: auto;
+  width: auto;
+  float: top;
+  display: block;
+}
+
+.project-text {
+  max-height: 13rem;
+  max-width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  display: block;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project-text::-webkit-scrollbar {
+  display: none;
+}
+
+.job {
+  display: block;
+  max-height: 50rem;
+  max-width: 30rem;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 5px; */
+}
+
+.company-name {
+  overflow: hidden;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.job-title {
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.job-dates {
+  height: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.job-description {
+  position: relative;
+  height: 13rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  display: block;
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  /* margin-left: 3px;
+  margin-right: 3px; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.job-description::-webkit-scrollbar {
+  display: none;
 }

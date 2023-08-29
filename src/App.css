@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Hide the main overflow to prevent double scrollbars */
+}
