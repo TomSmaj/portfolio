@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.37cc84d0.css",
+    "main.js": "/portfolio/static/js/main.2b2b6711.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ReelTalk.gif": "/portfolio/static/media/ReelTalk.8c039072183971a1d76d.gif",
+    "static/media/giftd.gif": "/portfolio/static/media/giftd.874401134443509bda6c.gif",
+    "static/media/rotating-workout-app.png": "/portfolio/static/media/rotating-workout-app.5ce5aafbeb956f9d1cd1.png",
+    "static/media/hiroshi-nagai-background.jpg": "/portfolio/static/media/hiroshi-nagai-background.9ccf271a0b8c3ea39be4.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.37cc84d0.css.map": "/portfolio/static/css/main.37cc84d0.css.map",
+    "main.2b2b6711.js.map": "/portfolio/static/js/main.2b2b6711.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37cc84d0.css",
+    "static/js/main.2b2b6711.js"
+  ]
+}
