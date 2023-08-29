@@ -8,7 +8,7 @@ exports.employmentData = [
     },
     {
         "title": "Google Maps API Developer Analyst",
-        "company": "Telus International (Google Contractor)",
+        "company": "Telus International",
         "website": "https://www.telusinternational.com/",
         "dates": "08/2018 - 08/2021",
         "description": ["Led project that developed a chrome extension that tracks client side requests being made by a customer’s Google Maps implementation. Unit tested and committed to Google code repo.", "Provided technical support for Google Maps API users through phone, chat, and email", "Gained extensive experience troubleshooting code issues using browser developer console and network tools", "Reproduced user issues, diagnosed and debugged error codes, filed bug reports, and escalated issues as needed to higher level engineers", "Troubleshot issues that arose across numerous different platforms (web applications, desktop applications, Android, iOS, etc.)", "Updated internal and external knowledge base articles and documentation to assist both customers and colleagues", "Presented 2 years in a row at Google Maps Platform annual internal business review"]
@@ -16,7 +16,7 @@ exports.employmentData = [
     {
         "title": "Systems Engineer",
         "company": "Toyota Tsusho Network Integration",
-        "website": "",
+        "website": "https://www.taiamerica.com/",
         "dates": "08/2016 – 05/2017",
         "description": ["Improved general user experience of employees by implementing SSO (Single Sign On) through Active Directory Services and Azure AD Connect","Provided support resolving technical issues (software, connectivity issues, problems printing, etc.), while stationed at client site", "Regularly performed System Administrative functions in Active Directory", "In charge of imaging and setting up hardware for new employees as well as clients’ new employees", "Gained thorough knowledge and experience with Windows Server 2012,  Windows Enterprise (7, 8, & 10), Mac OS X, and Ubuntu 16", "Used Powershell to perform actions in O365 such as assigning licenses, retrieving user login activity, and retrieving user group membership information"]
     }
