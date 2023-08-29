@@ -30,6 +30,7 @@ class Projects extends Component {
                     description={project.description}
                     languages={project.languages}
                     shortname={project.shortname}
+                    topmargin={project.topmargin}          
                   />
                 </div>
               )

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Draggable from 'react-draggable';
-// import "./Project.css";
 import "../index.css";
 
-class Project extends Component {
+class Job extends Component {
     constructor() {
         super();
         this.state = {
- 
+
         }
 
     };
@@ -20,21 +19,21 @@ class Project extends Component {
     render() {
         return (
             <Draggable>
-                <div className={"project " + this.props.shortname} style={this.props.topmargin !== '0%' ? {'margin-top':this.props.topmargin} : {}}>
+                <div className={"job"}>
                     <div className="windows95">
                         <div className="row">
-                            <div className="header-space" style={{height: "1.5rem"}}>
-                            <a className="project-name" href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.name}</a>
+                            <div className="header-space" style={{ height: "1.5rem" }}>
+                                <a className="company-name" href={this.props.website} target="_blank" rel="noopener noreferrer">{this.props.company}</a>
                             </div>
-                        </div>                
-                        <div className="row">
-                            <img className="project-pic" src={this.props.pic} />
-                        </div>
-                        <div className="row">                            
-                            <a className="project-github" href={this.props.github} target="_blank" rel="noopener noreferrer">Github repo</a>
                         </div>
                         <div className="row">
-                            <div className="project-text">
+                            <h2 className="job-title">{this.props.title}</h2>
+                        </div>
+                        <div className="row">
+                            <div className="job-dates">{this.props.dates}</div>
+                        </div>
+                        <div className="row">
+                            <div className="job-description">
                                 {this.props.description.map(line => {
                                     return (<p>{line}</p>)
                                 })}
@@ -47,4 +46,4 @@ class Project extends Component {
     }
 }
 
-export default Project;
+export default Job;
