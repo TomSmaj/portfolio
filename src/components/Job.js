@@ -27,16 +27,18 @@ class Job extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <h2 className="job-title">{this.props.title}</h2>
+                            <h3 className="job-title">{this.props.title}</h3>
                         </div>
                         <div className="row">
                             <div className="job-dates">{this.props.dates}</div>
                         </div>
                         <div className="row">
                             <div className="job-description">
+                                <ul>
                                 {this.props.description.map(line => {
-                                    return (<p>{line}</p>)
+                                    return (<li>{line}</li>)
                                 })}
+                                </ul>
                             </div>
                         </div>
                     </div>

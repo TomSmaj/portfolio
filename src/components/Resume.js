@@ -41,6 +41,17 @@ class Resume extends Component {
             />
           </div>
         </div>
+        <div className="row">
+        <div className="col">
+        <Job
+              title={this.state.toyota.title}
+              company={this.state.toyota.company}
+              website={this.state.toyota.website}
+              dates={this.state.toyota.dates}
+              description={this.state.toyota.description}
+            />
+        </div>
+        </div>
       </div>
     );
   }

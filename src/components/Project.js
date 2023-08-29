@@ -35,9 +35,11 @@ class Project extends Component {
                         </div>
                         <div className="row">
                             <div className="project-text">
+                                <ul>
                                 {this.props.description.map(line => {
-                                    return (<p>{line}</p>)
+                                    return (<li>{line}</li>)
                                 })}
+                                </ul>
                             </div>
                         </div>
                     </div>

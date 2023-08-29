@@ -21,7 +21,7 @@ exports.projectData = [
         "github": "https://github.com/gold-reel-media/giftd",
         "description": ["Full stack web program, express server with API communication to React component front end", "Users create accounts that they then create wishlists for, which are lists that contain items that they would like purchased for themselves", "Users then signup to buy gifts for other users without the intended recipient of that gift knowing who is getting it for them"],
         "languages": "React, JavaScript, HTML, MySQL",
-        "topmargin":"50%"
+        "topmargin":"45%"
     },
     {
         "name": "Reel Talk",
@@ -31,6 +31,6 @@ exports.projectData = [
         "github": "https://github.com/TomSmaj/movie-project",        
         "description": ["Full stack program, express server with API communication to Handlebars generated front end","Users create accounts that they then use to participate or begin movie discussion in various, topic focused discussion groups","Users are able to make posts in existing discussions and groups as well as create new ones."],
         "languages": "JavaScript, HTML, MySQL",
-        "topmargin":"25%"
+        "topmargin":"15%"
     }
 ]

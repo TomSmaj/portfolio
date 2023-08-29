@@ -1,9 +1,39 @@
-#root{
+#root {
   min-height: 100vh;
   background: linear-gradient(to top right, #018281, #0FBCBC);
 }
 
-.nav {  
+/* this weird '> *' rule overwrites some annoying bootstrap styling */
+/* div.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  >* {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+div.col {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+} */
+
+ul{
+  /* list-style-type: "\25BE"; */ /* upside down triangle */
+  /* list-style-type: "\30B7"; */ /* kanakada character */
+  /* list-style-type: "\53E3"; */ /* square kanakada character */
+  /* list-style-type: disclosure-open; */ /* upsdie down triangle */
+  list-style-type: "\25AB"; /* hollow square */
+}
+
+.nav {
   display: block;
   float: left;
   height: 100vh;
@@ -21,7 +51,7 @@
   text-align: center;
 }
 
-.navItemList{
+.navItemList {
   width: 100%;
   display: block;
   position: relative;
@@ -45,13 +75,14 @@
   height: 100%;
 }
 
-.project{
+.project {
   display: block;
   max-height: 50rem;
   max-width: 30rem;
-  margin-top: 30px;
+  margin-top: 5%;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  padding: 5px;
 }
 
 .project-name {
@@ -68,7 +99,7 @@
   margin-left: 3px;
 }
 
-.project-pic{
+.project-pic {
   /* max-height: 30%; */
   max-height: 20rem;
   max-width: 10.15rem;
@@ -78,12 +109,14 @@
   display: block;
 }
 
-.project-text{
+.project-text {
   max-height: 13rem;
   max-width: 100%;
   overflow: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   display: block;
   padding: 0;
   margin-left: 3px;
@@ -95,41 +128,52 @@
   display: none;
 }
 
-.job{
+.job {
   display: block;
   max-height: 50rem;
   max-width: 30rem;
   margin-top: 30px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  /* padding: 5px; */
 }
 
-.company-name{
+.company-name {
   overflow: hidden;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.job-title{
+.job-title {
   height: 2rem;
   position: relative;
   overflow: hidden;
-}
-
-.job-dates{
-  height: 1rem;
-  position: relative;
-}
-
-.job-description{
-  position: relative;
-  height: 13rem;
-  max-width: 100%;
-  overflow: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  display: block;
-  padding: 0;
   margin-left: 3px;
   margin-right: 3px;
+}
+
+.job-dates {
+  height: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.job-description {
+  position: relative;
+  height: 13rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  display: block;
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  /* margin-left: 3px;
+  margin-right: 3px; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
